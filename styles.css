@@ -1,0 +1,53 @@
+body {
+    font-family: "Nunito", serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: absolute; 
+
+}
+
+.toggle {
+    background-color: rgb(255, 243, 177);
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+    position: relative; 
+}
+
+h3 {
+    font-weight: 400;
+    text-transform: lowercase;
+    color:rgb(57, 57, 107);
+}
+
+.sun svg,
+.moon svg {
+    width: 35px;
+    height: 35px;
+    position: absolute; 
+    transform: translateY(-50%); 
+}
+
+.sun svg {
+
+}
+
+.moon svg {
+    left: 5px; 
+   display: none;
+    fill: rgb(40, 40, 121);
+}
