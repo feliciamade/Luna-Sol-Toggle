@@ -2,6 +2,8 @@ body {
     font-family: "Nunito", serif;
     margin: 0;
     padding: 0;
+    background-color: rgb(254, 255, 244);
+
 }
 
 main {
@@ -10,44 +12,63 @@ main {
     align-items: center;
     justify-content: center;
     height: 100vh;
+   
 }
 
-.button {
+#button {
     display: flex;
     align-items: center;
     gap: 20px;
-    position: absolute; 
+    position: relative; 
 
 }
 
-.toggle {
+#toggle {
     background-color: rgb(255, 243, 177);
     height: 40px;
     width: 100px;
     border-radius: 30px;
-    position: relative; 
+    position: relative;
+}
+
+#sun svg {
+    width: 35px;
+    height: 35px;
+    position: absolute; 
+    left: 5px; 
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+#moon svg {
+    width:20px;
+    height: 20px;
+    fill: rgb(54, 54, 179);
+    position: absolute; 
+    right: 10px; 
+    top: 50%; 
+    transform: translateY(-50%);
+    
+
 }
 
 h3 {
     font-weight: 400;
     text-transform: lowercase;
-    color:rgb(57, 57, 107);
+    color:rgb(64, 70, 146);
+}
+/* Dark mode styles */
+.toggle {
+    background-color: rgb(78, 78, 169);
 }
 
-.sun svg,
-.moon svg {
-    width: 35px;
-    height: 35px;
-    position: absolute; 
-    transform: translateY(-50%); 
+body.dark-mode .sun svg {
+    display: none;
 }
 
-.sun svg {
-
+body.dark-mode .moon svg {
+    display: block;
 }
-
-.moon svg {
-    left: 5px; 
-   display: none;
-    fill: rgb(40, 40, 121);
+.hidden {
+    display: none;
 }
