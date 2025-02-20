@@ -55,7 +55,7 @@ main {
 h3 {
     font-weight: 400;
     text-transform: lowercase;
-    color:rgb(64, 70, 146);
+    color:rgb(255, 165, 31);
 }
 /* Dark mode styles */
 .toggle {
